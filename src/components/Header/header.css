@@ -19,6 +19,13 @@
    }
   }
 
+  @media screen and (max-width: 430px) {
+    .nav{
+     width: 350px;
+    }
+   }
+ 
+
 .logo{
     font-family: Lora;
     font-size: 18px;

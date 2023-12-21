@@ -96,7 +96,7 @@ function Home() {
         </div>
       </div>
       <div className="content2">
-        <div className="content1-parag">
+        <div className="content2-parag">
           <h2>Notre Engagement envers Vous</h2>
           <br></br>
           <p> 
