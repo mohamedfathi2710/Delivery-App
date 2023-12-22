@@ -1,12 +1,13 @@
 import React from 'react'
-import './home.css'
-//import liv from './livreur2.avif'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faWhatsapp, faInstagram} from '@fortawesome/free-brands-svg-icons';
-import pharmacy from './Pharmacy.jpg'
-import cafe from './cafe.jpg'
-import food from './food2.jpg'
-import everything from './everything.jpg'
+import './home.css'
+
+import pharmacy from '../assets/Pharmacy.jpg'
+import cafe from '../assets/cafe.jpg'
+import food from '../assets/food2.jpg'
+import everything from '../assets/everything.jpg'
+import Slick from './slick'
 
 function Home() {
 
@@ -75,12 +76,15 @@ function Home() {
         </div>
       </div>
     </div>
+
+   
     </section>
+    <div className="caroussel"><Slick/></div>
+    
 
 {/**---------------------------------------- About us section  ------------------------------*/}
     <div className='about-title'>
       <h1>À propos de Nous</h1>
-     {/**  */}
     </div>
     <section className='about'>
       <div className="content1">

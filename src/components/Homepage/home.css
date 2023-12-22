@@ -23,7 +23,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./livreur2.avif');
+  background-image: url('../assets/livreur2.avif');
   background-size: cover;
   background-position: center;
 }
@@ -153,7 +153,8 @@ body {
   margin-top: 50px;
 }
 .services-title{
-  margin-bottom: 50px;
+  margin-bottom: 70px;
+
 }
 .about-title{
   margin-bottom: 50px;
@@ -168,11 +169,22 @@ body {
 }
 .services{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.caroussel{
+  margin-top: 50px;
+  width: 100%;
+  height: 50%;
+
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
 
 .about{
   display: flex;
@@ -270,7 +282,7 @@ body {
   position: relative;
   width: 400px;
   height: 350px;
-  background-image: url(cafe.jpg);
+  background-image: url("../assets/cafe.jpg");
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
@@ -282,7 +294,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(splash.jpg);
+  background: url("../assets/splash.jpg");
   background-size: 850px;
   background-position: center;
   background-repeat: no-repeat;
@@ -322,7 +334,7 @@ body {
   position: relative;
   width: 400px;
   height: 350px;
-  background-image: url(food2.jpg);
+  background-image: url("../assets/food2.jpg");
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
@@ -334,7 +346,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(splash.jpg);
+  background: url("../assets/splash.jpg");
   background-size: 850px;
   background-position: center;
   background-repeat: no-repeat;
@@ -506,6 +518,10 @@ body {
     font-size: 12px; 
   }
 
+  .caroussel{
+   display: none;
+  }
+  
   .homepage {
     height: 500px;
   }
@@ -549,6 +565,7 @@ body {
   .services{
     padding-left: 20px;
     padding-right: 20px;
+    height: 300px;
   }
 
   .services-title h1,
