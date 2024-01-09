@@ -49,7 +49,7 @@ function Home() {
     <div className='services-title'>
       <h1>Nos Services</h1>
     </div>
-    <section className='services'>
+    <section id="services" className='services'>
     <div class="grid grid-cols-2 gap-4">
       <div className='grid-card'>
         <img src={pharmacy} alt="" srcset="" />
@@ -86,7 +86,7 @@ function Home() {
     <div className='about-title'>
       <h1>À propos de Nous</h1>
     </div>
-    <section className='about'>
+    <section id="about" className='about'>
       <div className="content1">
         <div className="content1-img"></div>
         <div className="content1-parag">
@@ -115,7 +115,7 @@ function Home() {
       </div>
     </section>
 
-    <section className='contact'>
+    <section id="contact" className='contact'>
       <ul className='contact-us'>
         <li><a href="#">Instagram</a></li>
         <li><a href="#">Facebook</a></li>
