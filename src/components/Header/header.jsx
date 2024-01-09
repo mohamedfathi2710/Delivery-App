@@ -2,36 +2,22 @@ import React from "react";
 import { Navbar, Collapse, Typography, IconButton,} from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import './header.css'
+import logo from "./kesh_Delivery.png"
  
 function NavList() {
   return (
     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
+      <Typography as="li" variant="small" color="blue-gray" className="p-1 font-medium link">
         <a href="#about" className="flex items-center hover:text-blue-500 transition-colors">
-          About Us
+          About
         </a>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
+      <Typography as="li" variant="small" color="blue-gray" className="p-1 font-medium link">
         <a href="#services" className="flex items-center hover:text-blue-500 transition-colors">
           Services
         </a>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-medium"
-      >
+      <Typography as="li" variant="small" color="blue-gray" className="p-1 font-medium link">
         <a href="#contact" className="flex items-center hover:text-blue-500 transition-colors">
           Contact Us
         </a>
@@ -57,8 +43,8 @@ function Header() {
   return (
     <Navbar className="mx-auto max-w-screen-xl px-6 py-3 nav">
       <div className="flex items-center justify-between text-blue-gray-900">
-        <Typography as="a" href="#" variant="h6" className="mr-4 cursor-pointer py-1.5 logo">
-          KESH Livraison
+        <Typography as="a" href="#" variant="h6" className="mr-4 cursor-pointer py-1.5 ">
+          <img src={logo} alt="" className="logo" />
         </Typography>
         <div className="hidden lg:block">
           <NavList />

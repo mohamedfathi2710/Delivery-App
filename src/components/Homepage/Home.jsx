@@ -11,6 +11,17 @@ import Slick from './slick'
 
 function Home() {
 
+  const openWhatsApp = () => {
+    // Replace 'yourNumber' with your actual WhatsApp number, including the international country code
+    const phoneNumber = '+212706365172';  // Replace with your actual number and country code
+    
+    // Construct the WhatsApp URL with wa.me domain
+    const whatsappUrl = `https://wa.me/${encodeURIComponent(phoneNumber)}`;
+
+    // Open the WhatsApp URL in a new tab
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <>
     <section className="homepage">
@@ -23,24 +34,10 @@ function Home() {
 
       </div>
       <div className="wrapper">
-          <div className="button">
-            <div className="icon">
-            <FontAwesomeIcon icon={faFacebookF} />
-            </div>
-            <span>Facebook</span>
+          <div className="button" onClick={openWhatsApp}>
+            <FontAwesomeIcon className='icon' icon={faWhatsapp} />
           </div>
-          <div className="button">
-            <div className="icon">
-            <FontAwesomeIcon icon={faWhatsapp} />
-            </div>
-            <span>Whatsapp</span>
-          </div>
-          <div className="button">
-            <div className="icon">
-            <FontAwesomeIcon icon={faInstagram} />
-            </div>
-            <span>Instagram</span>
-          </div>
+
         </div>
     </section>
 
@@ -120,7 +117,7 @@ function Home() {
         <li><a href="#">Instagram</a></li>
         <li><a href="#">Facebook</a></li>
         <li><a href="mailto:julesforrest@gmail.com">Email</a></li>
-        <li><a href="#">Num Tel : 0604040404</a></li>
+        <li><a href="#">Num Tel : 0706365172</a></li>
         <li>
           <p>👋</p>
         </li>
